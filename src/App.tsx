@@ -1,9 +1,12 @@
-function App() {
+import Input from "./components/Input";
+
+const App = () => {
   return (
-    <>
-      <h1>Hello world</h1>
-    </>
+    <p className="flex gap-2 bg-black p-6">
+      <Input placeholder="E-mail" type="email" />
+      <Input placeholder="Senha" type="password" />
+    </p>
   );
-}
+};
 
 export default App;
